@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Box, IconButton, styled, SwipeableDrawer } from "@mui/material";
 import { Menu } from "@mui/icons-material";
 
@@ -21,6 +21,10 @@ const StyledMenuBtn = styled(IconButton)(({ theme }) => ({
 
 const Sidebar = ({ selectedTab, setSelectedTab }) => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
+
+    useEffect(() => {
+        setSidebarOpen(false);
+    }, [selectedTab]);
 
     return (
         <Box>
