@@ -80,6 +80,8 @@ const Tasklist = ({ tasklist, setTasklist, selectedTab }) => {
                                 setTasklist={setTasklist}
                             />
                         );
+                    } else {
+                        return null;
                     }
                 })}
             </List>
