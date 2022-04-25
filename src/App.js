@@ -18,14 +18,9 @@ const DEFAULT = [
         date: null,
     },
     {
-        task: "Give it today's date!",
+        task: "Give it a date!",
         important: false,
-        date: format(new Date(), "MM/dd/yyyy"),
-    },
-    {
-        task: "Give it a future date!",
-        important: false,
-        date: format(add(new Date(), { days: 3 }), "MM/dd/yyyy"),
+        date: format(add(new Date(), { months: 3 }), "MM/dd/yyyy"),
     },
 ];
 

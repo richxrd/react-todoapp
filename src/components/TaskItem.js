@@ -9,6 +9,7 @@ import {
     ListItemText,
     Stack,
 } from "@mui/material";
+import { format } from "date-fns";
 import React from "react";
 import EditTask from "./EditTask";
 
@@ -41,7 +42,13 @@ const TaskItem = ({
                         <ListItemText primary={task.task} />
                     </ListItemButton>
                     <Stack direction="row" spacing={2} alignItems="center">
-                        <ListItemText secondary={task.date || " "} />
+                        <ListItemText
+                            secondary={
+                                task.date
+                                    ? format(new Date(task.date), "MM/dd")
+                                    : ""
+                            }
+                        />
 
                         <EditTask
                             task={task}
