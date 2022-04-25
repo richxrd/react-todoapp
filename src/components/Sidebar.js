@@ -5,6 +5,8 @@ import { Menu } from "@mui/icons-material";
 import SidebarMenu from "./SidebarMenu";
 
 const StyledContainer = styled(Box)(({ theme }) => ({
+    height: "100%",
+    position: "fixed",
     [theme.breakpoints.down("md")]: {
         display: "none",
     },

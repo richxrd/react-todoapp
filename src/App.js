@@ -37,7 +37,7 @@ const App = () => {
 
     return (
         <>
-            <Stack direction="row">
+            <Stack direction="row" sx={{ width: "100%", height: "100%" }}>
                 <Sidebar
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}
