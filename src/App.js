@@ -8,17 +8,17 @@ import { add, format } from "date-fns";
 
 const DEFAULT = [
     {
-        task: "Welcome to To Do App! Add some tasks!",
+        task: "Welcome!",
         important: true,
         date: null,
     },
     {
-        task: "Mark it as important!",
+        task: "Mark your tasks as important!",
         important: true,
         date: null,
     },
     {
-        task: "Give it a date!",
+        task: "Schedule your tasks with a date!",
         important: false,
         date: format(add(new Date(), { months: 3 }), "MM/dd/yyyy"),
     },
